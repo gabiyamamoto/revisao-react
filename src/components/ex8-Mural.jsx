@@ -7,8 +7,16 @@ export default function Mural() {
     const enviarTweet = () => {
         setTweets([...tweets, novoTweet]);
 
-        setNovoTweet();
+        setNovoTweet('');
     };
 
-    return <button onClick={enviarTweet}>Postar</button>;
+    return <div>
+        <button onClick={enviarTweet}>Postar</button>
+
+        <ul>
+            {tweets.map((tweet, index) => (
+                <li key={index}>{tweet}</li>
+            ))}
+        </ul>
+    </div>
 }

@@ -4,8 +4,7 @@ export default function DepositoDuplo() {
     const [dinheiro, setDinheiro] = useState(0);
 
     const transferir = () => {
-        setDinheiro((valorAntigo) => valorAntigo + 100);
-        setDinheiro((valorAntigo) => valorAntigo + 100);
+        setDinheiro((valorAntigo) => (valorAntigo + 200));
     };
 
     return (

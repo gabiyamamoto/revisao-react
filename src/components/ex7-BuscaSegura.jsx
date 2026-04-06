@@ -7,7 +7,6 @@ export default function BuscaSegura() {
         <div>
             <input
                 type="text"
-                // Complete os dois fios:
                 value={termo}
                 onChange={(evento) => setTermo(evento.target.value)}
             />
